@@ -1,10 +1,19 @@
-//let number = 3;
-//console.log('string' * 7);
+const numberOfFilms = +prompt(`Сколько фильмов Вы уже посмотрели?`);
 
-const obj = {
-    Name: "Intel i5 10400",
-    Core: 6,
-    HyperTraiding: true,
+const personalMovieDB = {
+    count:numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
 };
-console.log(obj.HyperTraiding);
-console.log(2 + +`2`);
+
+const a = prompt(`Один из просмотренных последних фильмов`, ''),
+      b = prompt(`На сколько оцените его?`, ''),
+      c = prompt(`Один из просмотренных последних фильмов`, ''),
+      d = prompt(`На сколько оцените его?`, '');
+
+      personalMovieDB.movies[a] = b;
+      personalMovieDB.movies[c] = d;
+      
+      console.log(personalMovieDB);
