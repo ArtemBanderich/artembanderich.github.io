@@ -1,1 +1,0 @@
-# artembanderich.github.io
